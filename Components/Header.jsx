@@ -17,10 +17,15 @@ const Header = () => {
 
   const navItems = [
     { label: 'Home', path: '/', icon: <HomeIcon /> },
-    { label: 'Register', path: '/Signup' },
+    // { label: 'Register', path: '/Signup' },
     
-    { label: 'Login', path: '/Login', icon: <LoginIcon /> },
-    { label: 'Profile', path: '/profile', icon: <AccountCircleIcon /> }
+    // { label: 'Login', path: '/Login', icon: <LoginIcon /> },
+    { label: 'Influencer', path: '/Influencer'  },
+
+    { label: 'Brand', path: '/Brand'  },
+    { label: 'Profile', path: '/profile', icon: <AccountCircleIcon /> },
+
+
   ];
 
   const drawer = (

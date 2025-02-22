@@ -4,11 +4,11 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <AppBar position="fixed" sx={{ top: 'auto', bottom: 0, bgcolor: 'primary' }}>
+    <AppBar position="relative" sx={{ top: 'auto', bottom: 0, bgcolor: 'primary' }}>
       <Toolbar>
         <Container maxWidth="lg">
           <Typography variant="body2" color="inherit" align="center">
-            &copy; {currentYear}. All rights reserved.
+          © {new Date().getFullYear()} Influencer Marketing. All Rights Reserved.
           </Typography>
         </Container>
       </Toolbar>
