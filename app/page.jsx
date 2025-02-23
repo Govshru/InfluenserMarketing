@@ -4,6 +4,10 @@ import { Button, Grid, Typography, Box, IconButton } from "@mui/material";
 import { Instagram, Twitter } from "@mui/icons-material";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Karla:ital,wght@0,200..800;1,200..800&family=Quicksand:wght@300..700&family=Sigmar&family=Teko:wght@300..700&display=swap');
+</style>
+
 
 const HomePage = () => {
   const router = useRouter();
@@ -18,7 +22,9 @@ const HomePage = () => {
         display: "flex",
         flexDirection: "column",
         minHeight: "100vh", // ✅ Ensures full scrollable page
-        background: "linear-gradient(to right, #0f2027, #203a43, #2c5364)",
+        // background: "linear-gradient(to right, #0f2027, #203a43, #2c5364)",
+        background:"#12232E"
+
       }}
     >
       {/* 🔥 Main Content */}
@@ -35,7 +41,7 @@ const HomePage = () => {
         <Grid container spacing={4} alignItems="center" maxWidth="lg">
           {/* Left Side - Text */}
           <Grid item xs={12} md={6}>
-            <Typography variant="h3" fontWeight="bold" color="white" gutterBottom>
+            <Typography variant="h2" fontFamily="Kanit" fontWeight="bold" color="white" gutterBottom>
               Join the Influencer Revolution
             </Typography>
             <Typography variant="body1" color="rgba(255,255,255,0.8)" paragraph>
@@ -44,11 +50,12 @@ const HomePage = () => {
             <Button
               variant="contained"
               sx={{
-                backgroundColor: "#ff7f50",
-                "&:hover": { backgroundColor: "#ff6347" },
+                backgroundColor:"rgb(27, 43, 54)",
+                "&:hover": { backgroundColor: "#4DA8DA" },
                 padding: "12px 24px",
                 fontSize: "1rem",
                 marginRight: "16px",
+                border:"solid 1px #4DA8DA"
               }}
               onClick={() => router.push("/Login")}
             >
@@ -57,10 +64,11 @@ const HomePage = () => {
             <Button
               variant="contained"
               sx={{
-                backgroundColor: "#ff7f50",
-                "&:hover": { backgroundColor: "#ff6347" },
+                backgroundColor:"rgb(27, 43, 54)" ,
+                "&:hover": { backgroundColor: "#4DA8DA" },
                 padding: "12px 24px",
                 fontSize: "1rem",
+                border:"solid 1px #4DA8DA"
               }}
               onClick={()=>router.push("/Signup")}
             >
@@ -95,7 +103,7 @@ const HomePage = () => {
       {/* 👇🔥 Additional Sections - Always Visible Below 👇 */}
       <Box
         sx={{
-          backgroundColor: "#222",
+          backgroundColor: "rgb(21, 31, 37)",
           color: "white",
           padding: 6,
           textAlign: "center",

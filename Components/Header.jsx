@@ -7,6 +7,10 @@ import LoginIcon from '@mui/icons-material/Login';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import Link from 'next/link';
 import { useState } from 'react';
+import { LineWeight, Scale } from '@mui/icons-material';
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Karla:ital,wght@0,200..800;1,200..800&family=Quicksand:wght@300..700&family=Sigmar&display=swap');
+</style>
 
 const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -47,7 +51,7 @@ const Header = () => {
 
   return (
     <>
-      <AppBar position="static" sx={{ bgcolor: 'primary.main' }}>
+      <AppBar position="static" sx={{ bgcolor: '#007CC7' }}>
         <Toolbar>
           <IconButton
             edge="start"
@@ -62,9 +66,9 @@ const Header = () => {
             variant="h6"
             component={Link}
             href="/"
-            sx={{ flexGrow: 1, textDecoration: 'none', color: 'inherit' }}
+            sx={{ flexGrow: 1, textDecoration: 'none', color: 'inherit', fontFamily:'Anton', fontWeight:'bold', }}
           >
-            Logo
+            Connect
           </Typography>
           <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: 2 }}>
             {navItems.map((item) => (
